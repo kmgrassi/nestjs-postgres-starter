@@ -25,5 +25,15 @@
 ***
 
 ## Deployment
-TODO
+See this [blog post]("https://medium.com/") for heroku deployment walk through 
+
+Deploy to heroku
+1. Set up [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) (if you don't have it installed)
+2. Set up github [auto-deploy](https://devcenter.heroku.com/articles/github-integration)
+3. Make sure the Procfile has the following command to run start: `web: node dist/api/main.js` 
+4. Provision postgres addon in heroku: `heroku addons:create heroku-postgresql:hobby-dev` (in command line in root directory)
+5. Find db credentials: heroku pg:credentials:url or click on the db instance in heroku → will open a db gui → settings → database credentials
+6. Copy the credentials into the heroku config variables
+7. Fix ssl error in the app.module file: 
+`ssl: config.get("ENV") === "development" ? false : { rejectUnauthorized: false}`
 
