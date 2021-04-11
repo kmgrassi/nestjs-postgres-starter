@@ -1,15 +1,15 @@
 # Nestjs Postgres API starter repo
 
 ## Includes
-1. [NestJS] (https://nestjs.com/)
+1. [NestJS](https://nestjs.com/)
 2. TypeScript
-3. [TypeORM] (https://typeorm.io/#/)
+3. [TypeORM](https://typeorm.io/#/)
 4. Postgres db config setup
 
 ## Setup
 1. Clone repo `git clone https://github.com/kmgrassi/nestjs-postgres-starter.git`
 2. Run command `npm install`
-3. Setup postgres on your local machine ([tutorial])(https://www.postgresqltutorial.com/install-postgresql) and start server
+3. Setup postgres on your local machine. [tutorial](https://www.postgresqltutorial.com/install-postgresql) and start server
 4. Rename `.env-example` in api to `.env` with the following postgres database properties that you will connect to for local development
     * DB_HOST="localhost"
     * DB_PORT=5432
@@ -25,7 +25,7 @@
 ***
 
 ## Deployment
-See this [blog post]("https://kmgrassi.medium.com/how-to-deploy-a-nestjs-postgres-server-to-heroku-a3d077fd284f") for heroku deployment walk through 
+See this [blog post](https://kmgrassi.medium.com/how-to-deploy-a-nestjs-postgres-server-to-heroku-a3d077fd284f) for heroku deployment walk through 
 
 Deploy to heroku
 1. Set up [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) (if you don't have it installed)
